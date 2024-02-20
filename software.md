@@ -122,3 +122,12 @@ alias gs='git status'
 # ansible aliases
 alias ap='ansible-playbook'
 ```
+
+## Git configuration
+
+Add commit signing:
+```
+git config --global gpg.format ssh
+git config --global user.signingKey ~/.ssh/id_rsa.pub
+git config --global commit.gpgsign true
+```
