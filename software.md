@@ -1,10 +1,9 @@
 ## brew
-- ansible
+- ansible (better through pip)
 - ansible-lint
 - zkcli
 - zookeeper
 - gnu-sed
-- grep
 - htop
 - iperf3
 - mc
