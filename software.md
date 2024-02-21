@@ -27,7 +27,7 @@
 - telegram - https://github.com/telegramdesktop/tdesktop?tab=readme-ov-file#supported-systems
 - iterm2 - https://iterm2.com/downloads.html
 - spotify
-- sublimne text - https://www.sublimetext.com/3
+- sublime text - https://www.sublimetext.com/3
 - sublime merge - https://www.sublimemerge.com/download
 - outline
 - outline manager
@@ -46,10 +46,14 @@
 - Linear Mouse ?
 - OBS
 - Raycast
+  - Manage Fallback Commands -> take Google Search up
+  - Install extensions (see list)
+  - Make shortcut for Chrome Bookmark Search
+  - Install raycast-scripts (https://github.com/etoosamoe/raycast-scripts)
 - Obsidian
 - Hot - https://github.com/macmade/Hot
 - Zoom
-- Multipass
+- Multipass - for Ubuntu virtual machines
 - BetterDisplay - for external monitor custom resolution (e.g. enable HiDPI on 2k monitor)
 - qBitTorrent - https://www.fosshub.com/qBittorrent.html
 
@@ -66,21 +70,21 @@
 - Change Dock hide speed:
   - `defaults write com.apple.dock autohide-time-modifier -float 0.15; killall Dock`
   - `defaults write com.apple.dock "autohide-delay" -float "0.0" && killall Dock`
-- Install BetterDisplay and set external display resolution to 2192x1233, HiDPI enabled
+- Install BetterDisplay and set external display resolution to 2048x1152, HiDPI enabled. It's not native 2k, but it looks nice and sharp with HiDPI enabled.
 
 ## Terminal configuration
 
-Install Oh My Zsh:
+### Install Oh My Zsh
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-Install Powerlevel10k
+### Install Powerlevel10k
 ```
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
-Install plugins
+### Install plugins
 - https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
 - https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 ```
