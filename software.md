@@ -2,6 +2,8 @@
 - ansible (better through pip)
 - ansible-lint
 - zkcli
+  - `brew tap let-us-go/zkcli`
+  - `brew install zkcli`
 - zookeeper
 - gnu-sed
 - htop
