@@ -18,6 +18,7 @@
 
 ### brew cask
 - openconnect-gui
+- keycastr — Show pressed keys on screen. Good for streams and video.
 - vlc
 - dozer
 
