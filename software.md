@@ -73,6 +73,8 @@
   - `defaults write com.apple.dock autohide-time-modifier -float 0.15; killall Dock`
   - `defaults write com.apple.dock "autohide-delay" -float "0.0" && killall Dock`
 - Install BetterDisplay and set external display resolution to 2048x1152, HiDPI enabled. It's not native 2k, but it looks nice and sharp with HiDPI enabled.
+- Disable `.DS_Store` files creation:
+  - `defaults write com.apple.desktopservices DSDontWriteNetworkStores true`
 
 ## Terminal configuration
 
