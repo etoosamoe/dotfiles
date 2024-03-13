@@ -15,6 +15,7 @@
 - sipcalc
 - tmux
 - tree
+- stats
 
 ### brew cask
 - openconnect-gui
@@ -54,7 +55,7 @@
   - Make shortcut for Chrome Bookmark Search
   - Install raycast-scripts (https://github.com/etoosamoe/raycast-scripts)
 - Obsidian
-- Hot - https://github.com/macmade/Hot
+- Hot - https://github.com/macmade/Hot, can be replaced by Stats (brew)
 - Zoom
 - Multipass - for Ubuntu virtual machines
 - BetterDisplay - for external monitor custom resolution (e.g. enable HiDPI on 2k monitor)
