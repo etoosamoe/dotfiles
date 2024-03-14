@@ -1,5 +1,5 @@
 ## brew
-- ansible (better through pip)
+- ansible (better to install with pip)
 - ansible-lint
 - zkcli
   - `brew tap let-us-go/zkcli`
@@ -15,13 +15,14 @@
 - sipcalc
 - tmux
 - tree
-- stats
+- alt-tab - windows-like app switching, with window previews
 
 ### brew cask
-- openconnect-gui
+- openconnect-gui - VPN Client for Open Connect
 - keycastr — Show pressed keys on screen. Good for streams and video.
 - vlc
-- dozer
+- dozer — hide apps from dock. I don't use it since I changed menu bar spacing
+- stats — System information in menu bar
 
 ## applications
 - brew - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
@@ -35,10 +36,10 @@
 - sublime merge - https://www.sublimemerge.com/download
 - outline
 - outline manager
-- BitWarden - https://bitwarden.com/download/
-- Strongbox
+- BitWarden - Password manager — https://bitwarden.com/download/
+- Strongbox - KeePass format password manager
 - Notion
-- Tunnelblick
+- Tunnelblick - VPN client for OpenVPN
 - Visual Studio Code
 - Insomnia
 - Tomito
@@ -55,11 +56,20 @@
   - Make shortcut for Chrome Bookmark Search
   - Install raycast-scripts (https://github.com/etoosamoe/raycast-scripts)
 - Obsidian
-- Hot - https://github.com/macmade/Hot, can be replaced by Stats (brew)
+- Hot - Show CPU temperature in menu bar. https://github.com/macmade/Hot, can be replaced by Stats (brew). Good for Intel CPUs, it shows throttling
 - Zoom
-- Multipass - for Ubuntu virtual machines
+- Multipass - for fast Ubuntu virtual machine creation
 - BetterDisplay - for external monitor custom resolution (e.g. enable HiDPI on 2k monitor)
 - qBitTorrent - https://www.fosshub.com/qBittorrent.html
+
+### RayCast extensions
+- Brew
+- Base64
+- Coffee
+- Generate Password
+- Kill Process
+- Set Slack Status
+
 
 ## MacOS configuration
 
@@ -71,7 +81,7 @@
 - Change menubar spacing
   - `defaults -currentHost write -globalDomain NSStatusItemSpacing -int 6`
   - `defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 6`
-- Change Dock hide speed:
+- Change Dock hiding speed:
   - `defaults write com.apple.dock autohide-time-modifier -float 0.15; killall Dock`
   - `defaults write com.apple.dock "autohide-delay" -float "0.0" && killall Dock`
 - Install BetterDisplay and set external display resolution to 2048x1152, HiDPI enabled. It's not native 2k, but it looks nice and sharp with HiDPI enabled.
