@@ -1,6 +1,6 @@
-## applications
-
 Curated list of applications, brew packages that I use every day (or almost every)
+
+## Applications
 
 - Brew - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 - Chrome
