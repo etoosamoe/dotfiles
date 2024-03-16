@@ -1,66 +1,72 @@
-## brew
+## applications
+
+Curated list of applications, brew packages that I use every day (or almost every)
+
+- Brew - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+- Chrome
+- Todoist - https://todoist.com/ru/downloads
+- Slack
+- Telegram - https://github.com/telegramdesktop/tdesktop?tab=readme-ov-file#supported-systems
+- iTerm2 - https://iterm2.com/downloads.html
+- Spotify
+- Sublime text - https://www.sublimetext.com/3
+- Sublime merge - https://www.sublimemerge.com/download
+- Outline
+- Outline manager
+- BitWarden - Password manager — https://bitwarden.com/download/
+- Strongbox - KeePass format password manager
+- Notion
+- Tunnelblick - VPN client for OpenVPN
+- Visual Studio Code
+- Insomnia — for making custom HTTP requests if I don't want to use cURL.
+- Tomito — nice pomodoro timer
+- Clockify — free time tracking software
+- VNC Viewer
+- Docker Desktop
+- Lens - https://k8slens.dev/download - nice GUI for Kubernetes, there should be the way to install free version
+- Shottr — top notch free screenshots tool, with crop, annotations, blur
+- OBS
+- Raycast
+  - Manage Fallback Commands -> take Google Search up
+  - Install extensions (see list below)
+  - Make shortcut for Chrome Bookmark Search (Cmd+Shift+B)
+  - Install personal raycast-scripts (https://github.com/etoosamoe/raycast-scripts)
+- Obsidian
+- Hot - Show CPU temperature in menu bar. https://github.com/macmade/Hot, can be replaced by Stats (brew). Good for Intel CPUs, it shows processor throttling
+- Zoom
+- Multipass - for fast Ubuntu virtual machine creation
+- BetterDisplay - for external monitor custom resolution (e.g. enable HiDPI on 2k monitor)
+- qBitTorrent - https://www.fosshub.com/qBittorrent.html
+
+### brew
+
+```brew install packagename```
+
 - ansible (better to install with pip)
 - ansible-lint
 - zkcli
   - `brew tap let-us-go/zkcli`
   - `brew install zkcli`
-- zookeeper
-- gnu-sed
 - htop
-- iperf3
-- mc
+- mc - midnight commander
 - ncdu
 - neofetch
 - s3cmd
 - sipcalc
 - tmux
 - tree
-- alt-tab - windows-like app switching, with window previews
+- alt-tab - windows-like app switching, with window previews (not installed for now)
+- hugo - for [blog](https://etogeek.dev) development
 
 ### brew cask
+
+```brew install --cask packagename```
+
 - openconnect-gui - VPN Client for Open Connect
 - keycastr — Show pressed keys on screen. Good for streams and video.
-- vlc
-- dozer — hide apps from dock. I don't use it since I changed menu bar spacing
-- stats — System information in menu bar
-
-## applications
-- brew - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-- chrome
-- todoist - https://todoist.com/ru/downloads
-- slack
-- telegram - https://github.com/telegramdesktop/tdesktop?tab=readme-ov-file#supported-systems
-- iterm2 - https://iterm2.com/downloads.html
-- spotify
-- sublime text - https://www.sublimetext.com/3
-- sublime merge - https://www.sublimemerge.com/download
-- outline
-- outline manager
-- BitWarden - Password manager — https://bitwarden.com/download/
-- Strongbox - KeePass format password manager
-- Notion
-- Tunnelblick - VPN client for OpenVPN
-- Visual Studio Code
-- Insomnia
-- Tomito
-- Clockify
-- VNC Viewer
-- Docker Desktop
-- Lens - ?
-- Shottr
-- Linear Mouse ?
-- OBS
-- Raycast
-  - Manage Fallback Commands -> take Google Search up
-  - Install extensions (see list)
-  - Make shortcut for Chrome Bookmark Search
-  - Install raycast-scripts (https://github.com/etoosamoe/raycast-scripts)
-- Obsidian
-- Hot - Show CPU temperature in menu bar. https://github.com/macmade/Hot, can be replaced by Stats (brew). Good for Intel CPUs, it shows throttling
-- Zoom
-- Multipass - for fast Ubuntu virtual machine creation
-- BetterDisplay - for external monitor custom resolution (e.g. enable HiDPI on 2k monitor)
-- qBitTorrent - https://www.fosshub.com/qBittorrent.html
+- vlc — Well-known video player
+- dozer — To hide apps from dock. I don't use it since I changed menu bar spacing.
+- stats — System information in menu bar, switched from Hot to Stats - noew I've got more info
 
 ### RayCast extensions
 - Brew
@@ -88,6 +94,19 @@
 - Disable `.DS_Store` files creation:
   - `defaults write com.apple.desktopservices DSDontWriteNetworkStores true`
 
+## IDE
+
+I use VSCode.
+
+Theme: [Gruvbox Theme](https://marketplace.visualstudio.com/items?itemName=jdinhlife.gruvbox)
+Font: FiraCode Nerd Font, 13pt
+Icons: material-icon-theme
+Extensions:
+- Duplicate Action
+- GitLens (free tier, I really like git blame in a code)
+- Nginx Configuration (syntax highlight)
+- Remote SSH
+
 ## Terminal configuration
 
 ### Install Oh My Zsh
@@ -103,6 +122,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 ### Install plugins
 - https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
 - https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting

@@ -1,1 +1,1 @@
-https://github.com/benmatselby/dotfiles/tree/main/vscode
+//TODO make vscode setup as this guy: https://github.com/benmatselby/dotfiles/tree/main/vscode
