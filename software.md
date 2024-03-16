@@ -98,14 +98,14 @@ Curated list of applications, brew packages that I use every day (or almost ever
 
 I use VSCode.
 
-Theme: [Gruvbox Theme](https://marketplace.visualstudio.com/items?itemName=jdinhlife.gruvbox)
-Font: FiraCode Nerd Font, 13pt
-Icons: material-icon-theme
-Extensions:
-- Duplicate Action
-- GitLens (free tier, I really like git blame in a code)
-- Nginx Configuration (syntax highlight)
-- Remote SSH
+- Theme: [Gruvbox Theme](https://marketplace.visualstudio.com/items?itemName=jdinhlife.gruvbox)
+- Font: FiraCode Nerd Font, 13pt
+- Icons: material-icon-theme
+- Extensions:
+  - Duplicate Action
+  - GitLens (free tier, I really like git blame in a code)
+  - Nginx Configuration (syntax highlight)
+  - Remote SSH
 
 ## Terminal configuration
 
