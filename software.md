@@ -75,6 +75,7 @@ Curated list of applications, brew packages that I use every day (or almost ever
 - Generate Password
 - Kill Process
 - Set Slack Status
+- IP Geolocation
 
 
 ## MacOS configuration
