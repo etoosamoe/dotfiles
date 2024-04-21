@@ -66,7 +66,7 @@ Curated list of applications, brew packages that I use every day (or almost ever
 - keycastr — Show pressed keys on screen. Good for streams and video.
 - vlc — Well-known video player
 - dozer — To hide apps from dock. I don't use it since I changed menu bar spacing.
-- stats — System information in menu bar, switched from Hot to Stats - noew I've got more info
+- stats — System information in menu bar, switched from Hot to Stats - now I've got more info
 
 ### RayCast extensions
 - Brew
@@ -94,6 +94,8 @@ Curated list of applications, brew packages that I use every day (or almost ever
 - Install BetterDisplay and set external display resolution to 2048x1152, HiDPI enabled. It's not native 2k, but it looks nice and sharp with HiDPI enabled.
 - Disable `.DS_Store` files creation:
   - `defaults write com.apple.desktopservices DSDontWriteNetworkStores true`
+- Click on the scroll bar (in a browser for example) jumps to the spot that's clicked instead of by-page scrolling down or up
+  - System Settings - Appearance - Jump to the spot that's clicked.
 
 ## IDE
 
