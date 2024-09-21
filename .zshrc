@@ -12,8 +12,6 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/Users/ysemyenkov/Library/Python/3.9/bin:$PATH"
-
 # ~~~~~~~~~~~~~~~ Environment Variables ~~~~~~~~~~~~~~~~~~~~~~~~
 
 # config
@@ -28,8 +26,6 @@ export OBSIDIAN_DIR="~/Library/Mobile Documents/iCloud~md~obsidian/Documents/eto
 alias v=nvim
 alias ..="cd .."
 
-alias cdblog="cd $REPOS/etogeek-hugo"
-
 alias t='tmux'
 alias e='exit'
 alias python=/usr/local/bin/python3
@@ -38,8 +34,11 @@ alias python=/usr/local/bin/python3
 alias ga='git add'
 alias gaa='git add .'
 alias gaaa='git add --all'
-alias gcam='git commit -am'
+alias gcm='git commit -m'
 alias gs='git status'
+alias gsm='git switch master'
+alias gsc='git switch -c'
+alias gsmp='gsm && ggpull'
 
 # ansible aliases
 alias ap='ANSIBLE_STRATEGY=mitogen_linear ANSIBLE_STRATEGY_PLUGINS=/Users/ysemyenkov/repo/mitogen-0.3.7/ansible_mitogen/plugins/strategy ANSIBLE_VAULT_PASSWORD_FILE=~/vault.pass ansible-playbook'

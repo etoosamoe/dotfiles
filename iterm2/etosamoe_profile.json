@@ -6,6 +6,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.38431373238563538
   },
+  "Custom Directory" : "No",
   "Working Directory" : "\/Users\/Yury_Semenkov",
   "Prompt Before Closing 2" : false,
   "Selected Text Color" : {
@@ -43,16 +44,17 @@
   "Mouse Reporting" : true,
   "Cursor Boost" : 0,
   "Ansi 4 Color" : {
-    "Red Component" : 0.27058824896812439,
-    "Color Space" : "Calibrated",
-    "Blue Component" : 0.53333336114883423,
+    "Red Component" : 0.42894697189331055,
+    "Color Space" : "P3",
+    "Blue Component" : 0.59826493263244629,
     "Alpha Component" : 1,
-    "Green Component" : 0.5215686559677124
+    "Green Component" : 0.57972151041030884
   },
   "Non-ASCII Anti Aliased" : true,
   "Sync Title" : false,
   "Disable Window Resizing" : true,
   "Description" : "Default",
+  "Custom Locale" : "en_GB.UTF-8",
   "Close Sessions On End" : true,
   "Jobs to Ignore" : [
     "rlogin",
@@ -291,11 +293,11 @@
   "Use Bold Font" : true,
   "Silence Bell" : false,
   "Ansi 12 Color" : {
-    "Red Component" : 0.49782026149750891,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0.59462108530296554,
+    "Red Component" : 0.33243292570114136,
+    "Color Space" : "P3",
+    "Blue Component" : 0.47069203853607178,
     "Alpha Component" : 1,
-    "Green Component" : 0.64582633972167969
+    "Green Component" : 0.6136474609375
   },
   "Window Type" : 0,
   "Use Bright Bold" : true,
@@ -350,11 +352,11 @@
   "Ambiguous Double Width" : false,
   "Cursor Type" : 2,
   "Ansi 0 Color" : {
-    "Red Component" : 0.15686275064945221,
-    "Color Space" : "Calibrated",
-    "Blue Component" : 0.15686275064945221,
+    "Red Component" : 0.201324462890625,
+    "Color Space" : "P3",
+    "Blue Component" : 0.201324462890625,
     "Alpha Component" : 1,
-    "Green Component" : 0.15686275064945221
+    "Green Component" : 0.201324462890625
   },
   "Blur" : false,
   "Normal Font" : "FiraCodeNF-Reg 13",
@@ -369,7 +371,7 @@
   "Command" : "",
   "Terminal Type" : "xterm-256color",
   "Horizontal Spacing" : 1,
-  "Option Key Sends" : 0,
+  "Option Key Sends" : 2,
   "Only The Default BG Color Uses Transparency" : true,
   "Blink Allowed" : false,
   "Minimum Contrast" : 0,
@@ -409,7 +411,7 @@
   "Columns" : 100,
   "Unicode Normalization" : 0,
   "Visual Bell" : true,
-  "Custom Directory" : "No",
   "ASCII Ligatures" : true,
-  "Thin Strokes" : 3
+  "Thin Strokes" : 3,
+  "Set Local Environment Vars" : 2
 }

@@ -3,7 +3,7 @@ Curated list of applications, brew packages that I use every day (or almost ever
 ## Applications
 
 - Brew - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-- Chrome
+- Brave (earlier Chrome) as main browser.
 - Todoist - https://todoist.com/ru/downloads
 - Slack
 - Telegram - https://github.com/telegramdesktop/tdesktop?tab=readme-ov-file#supported-systems
@@ -162,8 +162,7 @@ alias gcam='git commit -am'
 alias gs='git status'
 
 # ansible aliases
-alias ap='ansible-playbook'
-```
+alias ap='ANSIBLE_STRATEGY=mitogen_linear ANSIBLE_STRATEGY_PLUGINS=/Users/ysemyenkov/repo/mitogen-0.3.7/ansible_mitogen/plugins/strategy ANSIBLE_VAULT_PASSWORD_FILE=~/vault.pass ansible-playbook'
 
 ## Git configuration
 
