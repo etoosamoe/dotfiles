@@ -14,14 +14,9 @@ source $ZSH/oh-my-zsh.sh
 
 # ~~~~~~~~~~~~~~~ Environment Variables ~~~~~~~~~~~~~~~~~~~~~~~~
 
-# config
-export BROWSER="chrome"
-
 # directories
 export REPOS="$HOME/repo"
 export GITUSER="etoosamoe"
-export DOTFILES="$REPOS/dotfiles"
-export OBSIDIAN_DIR="~/Library/Mobile Documents/iCloud~md~obsidian/Documents/eto_obsidian"
 
 alias v=nvim
 alias ..="cd .."
@@ -41,7 +36,8 @@ alias gsc='git switch -c'
 alias gsmp='gsm && ggpull'
 
 # ansible aliases
-alias ap='ANSIBLE_STRATEGY=mitogen_linear ANSIBLE_STRATEGY_PLUGINS=/Users/ysemyenkov/repo/mitogen-0.3.7/ansible_mitogen/plugins/strategy ANSIBLE_VAULT_PASSWORD_FILE=~/vault.pass ansible-playbook'
+alias ap='ANSIBLE_STRATEGY=mitogen_linear ANSIBLE_STRATEGY_PLUGINS=/Users/<username>/repo/mitogen-0.3.7/ansible_mitogen/plugins/strategy ANSIBLE_VAULT_PASSWORD_FILE=~/vault.pass ansible-playbook'
+alias k='kubectl'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

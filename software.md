@@ -18,21 +18,22 @@ Curated list of applications, brew packages that I use every day (or almost ever
 - Notion
 - Tunnelblick - VPN client for OpenVPN
 - Visual Studio Code
-- Insomnia — for making custom HTTP requests if I don't want to use cURL.
+- Bruno — for making custom HTTP requests if I don't want to use cURL.
+- DBeaver — GUI for remote databases (*SQL), pretty useful.
 - Tomito — nice pomodoro timer
 - Clockify — free time tracking software
 - VNC Viewer
 - Docker Desktop
 - Lens - https://k8slens.dev/download - nice GUI for Kubernetes, there should be the way to install free version
 - Shottr — top notch free screenshots tool, with crop, annotations, blur
-- OBS
+- OBS - screecasts
 - Raycast
   - Manage Fallback Commands -> take Google Search up
   - Install extensions (see list below)
   - Make shortcut for Chrome Bookmark Search (Cmd+Shift+B)
   - Install personal raycast-scripts (https://github.com/etoosamoe/raycast-scripts)
 - Obsidian
-- Hot - Show CPU temperature in menu bar. https://github.com/macmade/Hot, can be replaced by Stats (brew). Good for Intel CPUs, it shows processor throttling
+- Stats (*from brew*) — shows CPU temp, load, ram, network in status bar. I used to use [Hot](https://github.com/macmade/Hot) earlier, but it works nicely with Intel CPUs and shows throttling.
 - Zoom
 - Multipass - for fast Ubuntu virtual machine creation
 - BetterDisplay - for external monitor custom resolution (e.g. enable HiDPI on 2k monitor)
@@ -76,6 +77,8 @@ Curated list of applications, brew packages that I use every day (or almost ever
 - Kill Process
 - Set Slack Status
 - IP Geolocation
+- Whois
+- Check Open Ports from [my repo](https://github.com/etoosamoe/raycast-scripts).
 
 
 ## MacOS configuration
@@ -135,34 +138,31 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```
 # ~~~~~~~~~~~~~~~ Environment Variables ~~~~~~~~~~~~~~~~~~~~~~~~
 
-# config
-export BROWSER="chrome"
-
-# directories
-export REPOS="$HOME/repo"
-export GITUSER="etoosamoe"
-export DOTFILES="$REPOS/dotfiles"
-export OBSIDIAN_DIR="~/Library/Mobile Documents/iCloud~md~obsidian/Documents/eto_obsidian"
-
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+# This is for Infisical Ansible Collection
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 alias v=nvim
 alias ..="cd .."
 
-alias cdblog="cd $REPOS/etogeek-hugo"
-
 alias t='tmux'
 alias e='exit'
+alias python=/usr/local/bin/python3
 
 # git aliases
 alias ga='git add'
 alias gaa='git add .'
 alias gaaa='git add --all'
-alias gcam='git commit -am'
+alias gcm='git commit -m'
 alias gs='git status'
+alias gsm='git switch master'
+alias gsc='git switch -c'
+alias gsmp='gsm && ggpull'
 
 # ansible aliases
-alias ap='ANSIBLE_STRATEGY=mitogen_linear ANSIBLE_STRATEGY_PLUGINS=/Users/ysemyenkov/repo/mitogen-0.3.7/ansible_mitogen/plugins/strategy ANSIBLE_VAULT_PASSWORD_FILE=~/vault.pass ansible-playbook'
+alias ap='ANSIBLE_STRATEGY=mitogen_linear ANSIBLE_STRATEGY_PLUGINS=/Users/<username>/repo/mitogen-0.3.7/ansible_mitogen/plugins/strategy ANSIBLE_VAULT_PASSWORD_FILE=~/vault.pass ansible-playbook'
+alias k='kubectl'
+```
 
 ## Git configuration
 
