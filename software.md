@@ -22,6 +22,7 @@ Curated list of applications, brew packages that I use every day (or almost ever
 - DBeaver — GUI for remote databases (*SQL), pretty useful.
 - Tomito — nice pomodoro timer
 - Clockify — free time tracking software
+- SwitchHosts - https://github.com/oldj/SwitchHosts - Manage local /etc/hosts file
 - VNC Viewer
 - Docker Desktop
 - Lens - https://k8slens.dev/download - nice GUI for Kubernetes, there should be the way to install free version
@@ -51,7 +52,6 @@ Curated list of applications, brew packages that I use every day (or almost ever
 - htop
 - mc - midnight commander
 - ncdu
-- neofetch
 - s3cmd
 - sipcalc
 - tmux
