@@ -4,6 +4,8 @@ Curated list of applications, brew packages that I use every day (or almost ever
 
 - Brew - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 - Firefox as main browser (earlier - Brave (earlier Chrome))
+  - [Elasticvue](https://elasticvue.com/) - GUI client to Elasticsearch clusters. Works as browser extension
+  - Flagfox plugin
 - [Super Productivity](https://super-productivity.com/) as to-do app / personal task manager. With self-hosted WebDAV sync and wep app. (earlier [Singularity App](https://singularity-app.com/) and [Todoist](https://todoist.com/ru/downloads))
 - [Telegram](https://github.com/telegramdesktop/tdesktop) as main messaging app
 - iTerm2 - https://iterm2.com/downloads.html
@@ -22,7 +24,6 @@ Curated list of applications, brew packages that I use every day (or almost ever
 - [SwitchHosts](https://github.com/oldj/SwitchHosts) - Manage local /etc/hosts file
 - Docker Desktop
 - [Lens](https://k8slens.dev/download) - nice GUI for Kubernetes, there should be the way to install free version
-- [Elasticvue](https://elasticvue.com/) - GUI client to Elasticsearch clusters. Works as browser extension
 - Shottr — top notch free screenshots tool, with crop, annotations, blur
 - OBS - screencasts
 - Raycast
