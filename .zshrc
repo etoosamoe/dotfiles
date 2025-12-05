@@ -15,14 +15,9 @@ source $ZSH/oh-my-zsh.sh
 # ~~~~~~~~~~~~~~~ Environment Variables ~~~~~~~~~~~~~~~~~~~~~~~~
 
 # directories
-export REPOS="$HOME/repo"
-export GITUSER="etoosamoe"
 
-alias v=nvim
 alias ..="cd .."
 
-alias t='tmux'
-alias e='exit'
 alias python=/usr/local/bin/python3
 
 # git aliases
@@ -36,8 +31,16 @@ alias gsc='git switch -c'
 alias gsmp='gsm && ggpull'
 
 # ansible aliases
-alias ap='ANSIBLE_STRATEGY=mitogen_linear ANSIBLE_STRATEGY_PLUGINS=/Users/<username>/repo/mitogen-0.3.7/ansible_mitogen/plugins/strategy ANSIBLE_VAULT_PASSWORD_FILE=~/vault.pass ansible-playbook'
+export ANSIBLE_STRATEGY="mitogen_linear"
+export ANSIBLE_STRATEGY_PLUGINS="/Users/ysemyenkov/repo/mitogen-0.3.31/ansible_mitogen/plugins/strategy"
+export ANSIBLE_VAULT_PASSWORD_FILE="~/vault.pass"
+alias ap='ansible-playbook'
+
 alias k='kubectl'
+
+# custom aliases
+# analyze docker images, eg "dive image:tag"
+alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock docker.io/wagoodman/dive"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

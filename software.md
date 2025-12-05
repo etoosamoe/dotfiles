@@ -3,42 +3,39 @@ Curated list of applications, brew packages that I use every day (or almost ever
 ## Applications
 
 - Brew - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-- Brave (earlier Chrome) as main browser.
-- Todoist - https://todoist.com/ru/downloads
-- Slack
-- Telegram - https://github.com/telegramdesktop/tdesktop?tab=readme-ov-file#supported-systems
+- Firefox as main browser (earlier - Brave (earlier Chrome))
+- [Super Productivity](https://super-productivity.com/) as to-do app / personal task manager. With self-hosted WebDAV sync and wep app. (earlier [Singularity App](https://singularity-app.com/) and [Todoist](https://todoist.com/ru/downloads))
+- [Telegram](https://github.com/telegramdesktop/tdesktop) as main messaging app
 - iTerm2 - https://iterm2.com/downloads.html
-- Spotify
-- Sublime text - https://www.sublimetext.com/3
-- Sublime merge - https://www.sublimemerge.com/download
-- Outline
-- Outline manager
-- BitWarden - Password manager — https://bitwarden.com/download/
-- Strongbox - KeePass format password manager
-- Notion
+- Spotify and Yandex Music. First for wide range of songs, second for best recommendation system.
+- [Sublime text](https://www.sublimetext.com/3)
+- [Sublime merge](https://www.sublimemerge.com/download)
+- Outline and Outline Manager
+- [BitWarden](https://bitwarden.com/download/) - Password manager
+- Strongbox - KeePass format password manager - for work purposes
+- Obsidian and Notion for different note-taking
 - Tunnelblick - VPN client for OpenVPN
 - Visual Studio Code
 - Bruno — for making custom HTTP requests if I don't want to use cURL.
 - DBeaver — GUI for remote databases (*SQL), pretty useful.
-- Tomito — nice pomodoro timer
-- Clockify — free time tracking software
-- SwitchHosts - https://github.com/oldj/SwitchHosts - Manage local /etc/hosts file
-- VNC Viewer
+- Clockify — free time tracking software, but Super Productivity can replace it
+- [SwitchHosts](https://github.com/oldj/SwitchHosts) - Manage local /etc/hosts file
 - Docker Desktop
-- Lens - https://k8slens.dev/download - nice GUI for Kubernetes, there should be the way to install free version
+- [Lens](https://k8slens.dev/download) - nice GUI for Kubernetes, there should be the way to install free version
+- [Elasticvue](https://elasticvue.com/) - GUI client to Elasticsearch clusters. Works as browser extension
 - Shottr — top notch free screenshots tool, with crop, annotations, blur
-- OBS - screecasts
+- OBS - screencasts
 - Raycast
   - Manage Fallback Commands -> take Google Search up
   - Install extensions (see list below)
   - Make shortcut for Chrome Bookmark Search (Cmd+Shift+B)
-  - Install personal raycast-scripts (https://github.com/etoosamoe/raycast-scripts)
-- Obsidian
-- Stats (*from brew*) — shows CPU temp, load, ram, network in status bar. I used to use [Hot](https://github.com/macmade/Hot) earlier, but it works nicely with Intel CPUs and shows throttling.
-- Zoom
+  - Install [personal raycast-scripts](https://github.com/etoosamoe/raycast-scripts)
+- Stats (*via brew*) — shows CPU temp, load, ram, network in status bar. I used to use [Hot](https://github.com/macmade/Hot) earlier, because it works nicely with Intel CPUs and shows throttling.
 - Multipass - for fast Ubuntu virtual machine creation
 - BetterDisplay - for external monitor custom resolution (e.g. enable HiDPI on 2k monitor)
-- qBitTorrent - https://www.fosshub.com/qBittorrent.html
+- [qBitTorrent](https://www.fosshub.com/qBittorrent.html)
+- [noTunes](https://github.com/tombonez/noTunes) - disables Apple Music completely, it opens sometimes when I press "play" hotkey
+- [httptap](https://github.com/ozeranskii/httptap) (*via brew*) - to measure HTTP request time from CLI.
 
 ### brew
 
@@ -53,6 +50,9 @@ Curated list of applications, brew packages that I use every day (or almost ever
 - mc - midnight commander
 - ncdu
 - s3cmd
+- pyenv
+- node
+- jq
 - sipcalc
 - tmux
 - tree
@@ -68,6 +68,16 @@ Curated list of applications, brew packages that I use every day (or almost ever
 - vlc — Well-known video player
 - dozer — To hide apps from dock. I don't use it since I changed menu bar spacing.
 - stats — System information in menu bar, switched from Hot to Stats - now I've got more info
+
+### pip
+
+- ansible
+- infisical-python
+
+### Other software
+
+- [Yandex CLI](https://yandex.cloud/ru/docs/cli/quickstart)
+- [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
 
 ### RayCast extensions
 - Brew
