@@ -146,36 +146,15 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```
 
 ### .zshrc
-```
-# ~~~~~~~~~~~~~~~ Environment Variables ~~~~~~~~~~~~~~~~~~~~~~~~
-
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
-# This is for Infisical Ansible Collection
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-
-alias v=nvim
-alias ..="cd .."
-
-alias t='tmux'
-alias e='exit'
-alias python=/usr/local/bin/python3
-
-# git aliases
-alias ga='git add'
-alias gaa='git add .'
-alias gaaa='git add --all'
-alias gcm='git commit -m'
-alias gs='git status'
-alias gsm='git switch master'
-alias gsc='git switch -c'
-alias gsmp='gsm && ggpull'
-
-# ansible aliases
-alias ap='ANSIBLE_STRATEGY=mitogen_linear ANSIBLE_STRATEGY_PLUGINS=/Users/<username>/repo/mitogen-0.3.7/ansible_mitogen/plugins/strategy ANSIBLE_VAULT_PASSWORD_FILE=~/vault.pass ansible-playbook'
-alias k='kubectl'
-```
+[.zshrc](.zshrc)
 
 ## Git configuration
+
+Initial config:
+```
+git config --global user.email "<my-email>@gmail.com"
+git config --global user.name "Yuriy Semyenkov"
+```
 
 Add commit signing:
 ```
