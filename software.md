@@ -165,3 +165,4 @@ git config --global commit.gpgsign true
 ### Zen Browser settings
 
 - Show loading indicator on tabs: `about:config` -> `zen.theme.hide-tab-throbber` to false.
+- Search bar suggestions: `about:config` -> `browser.search.suggest.enabled` to true
