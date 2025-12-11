@@ -3,24 +3,23 @@ Curated list of applications, brew packages that I use every day (or almost ever
 ## Applications
 
 - Brew - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-- Firefox as main browser (earlier - Brave (earlier Chrome))
+- Zen as main browser (earlier - Firefox (earlier Brave (earlier Chrome)))
   - [Elasticvue](https://elasticvue.com/) - GUI client to Elasticsearch clusters. Works as browser extension
   - Flagfox plugin
-- [Super Productivity](https://super-productivity.com/) as to-do app / personal task manager. With self-hosted WebDAV sync and wep app. (earlier [Singularity App](https://singularity-app.com/) and [Todoist](https://todoist.com/ru/downloads))
+- [Singularity App](https://singularity-app.com/) as main to-do app. Earlier I used [Todoist](https://todoist.com/ru/downloads) for a pretty long time.
 - [Telegram](https://github.com/telegramdesktop/tdesktop) as main messaging app
-- iTerm2 - https://iterm2.com/downloads.html
+- [iTerm2](https://iterm2.com/downloads.html), trying `ghostty` as terminal emulator
 - Spotify and Yandex Music. First for wide range of songs, second for best recommendation system.
-- [Sublime text](https://www.sublimetext.com/3)
-- [Sublime merge](https://www.sublimemerge.com/download)
-- Outline and Outline Manager
+- [Sublime text](https://www.sublimetext.com/3) - as a fast note-taking system
+- [Sublime merge](https://www.sublimemerge.com/download) - when I need to resolve some git conflicts
+- Outline and Outline Manager, Tunnelblick - VPN client for OpenVPN
 - [BitWarden](https://bitwarden.com/download/) - Password manager
 - Strongbox - KeePass format password manager - for work purposes
 - Obsidian and Notion for different note-taking
-- Tunnelblick - VPN client for OpenVPN
-- Visual Studio Code
+- Visual Studio Code - main IDE.
 - Bruno — for making custom HTTP requests if I don't want to use cURL.
 - DBeaver — GUI for remote databases (*SQL), pretty useful.
-- Clockify — free time tracking software, but Super Productivity can replace it
+- Clockify — free time tracking software
 - [SwitchHosts](https://github.com/oldj/SwitchHosts) - Manage local /etc/hosts file
 - Docker Desktop
 - [Lens](https://k8slens.dev/download) - nice GUI for Kubernetes, there should be the way to install free version
@@ -64,7 +63,6 @@ Curated list of applications, brew packages that I use every day (or almost ever
 
 ```brew install --cask packagename```
 
-- openconnect-gui - VPN Client for Open Connect
 - keycastr — Show pressed keys on screen. Good for streams and video.
 - vlc — Well-known video player
 - dozer — To hide apps from dock. I don't use it since I changed menu bar spacing.
@@ -119,6 +117,7 @@ I use VSCode.
 - Font: FiraCode Nerd Font, 13pt
 - Icons: material-icon-theme
 - Extensions:
+  - Codex
   - Duplicate Action
   - GitLens (free tier, I really like git blame in a code)
   - Nginx Configuration (syntax highlight)
@@ -162,3 +161,7 @@ git config --global gpg.format ssh
 git config --global user.signingKey ~/.ssh/id_rsa.pub
 git config --global commit.gpgsign true
 ```
+
+### Zen Browser settings
+
+- Show loading indicator on tabs: `about:config` -> `zen.theme.hide-tab-throbber` to false.
