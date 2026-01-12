@@ -3,7 +3,7 @@ Curated list of applications, brew packages that I use every day (or almost ever
 ## Applications
 
 - Brew - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-- Zen as main browser (earlier - Firefox (earlier Brave (earlier Chrome)))
+- Firefox with vertical tabs as main browser.
   - [Elasticvue](https://elasticvue.com/) - GUI client to Elasticsearch clusters. Works as browser extension
   - Flagfox plugin
 - [Singularity App](https://singularity-app.com/) as main to-do app. Earlier I used [Todoist](https://todoist.com/ru/downloads) for a pretty long time.
@@ -126,22 +126,22 @@ I use VSCode.
 ## Terminal configuration
 
 ### Install Oh My Zsh
+
+Currently I don't use OMZ.
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ### Install Powerlevel10k
 ```
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
 
 ### Install plugins
-- https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
-- https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 
 ```
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+brew install zsh-autosuggestions
 ```
 
 ### .zshrc
@@ -161,8 +161,3 @@ git config --global gpg.format ssh
 git config --global user.signingKey ~/.ssh/id_rsa.pub
 git config --global commit.gpgsign true
 ```
-
-### Zen Browser settings
-
-- Show loading indicator on tabs: `about:config` -> `zen.theme.hide-tab-throbber` to false.
-- Search bar suggestions: `about:config` -> `browser.search.suggest.enabled` to true
