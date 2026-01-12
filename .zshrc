@@ -50,6 +50,7 @@ alias gs='git status'
 alias gsm='git switch master'
 alias gsc='git switch -c'
 alias gsmp='gsm && ggpull'
+alias ggpush='git push origin "$(git_current_branch)"'
 alias ggpull='git pull origin "$(git_current_branch)"'
 alias lg='lazygit'
 
