@@ -67,7 +67,7 @@ gacp() {
   
   git add -A
   git commit -m "$*"
-  ggpush
+  git push origin "$(git_current_branch)"
 }
 
 alias ga='git add'
