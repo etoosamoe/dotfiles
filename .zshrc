@@ -1,5 +1,3 @@
-#zmodload zsh/zprof
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -19,6 +17,14 @@ setopt autocd
 
 autoload -Uz compinit
 compinit -C -u
+
+# ~~~~~~~~~~~~~~~ Key Bindings ~~~~~~~~~~~~~~~~~~~~~~~~
+
+bindkey '^[[1;5C' forward-word      # Ctrl+Right
+bindkey '^[[1;5D' backward-word     # Ctrl+Left
+bindkey '^[[3~' delete-char         # Delete
+bindkey '^[[H' beginning-of-line    # Home
+bindkey '^[[F' end-of-line          # End
 
 # ~~~~~~~~~~~~~~~ Environment Variables ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -42,6 +48,28 @@ function git_current_branch() {
   echo ${ref#refs/heads/}
 }
 
+gacp() {
+  if [ -z "$1" ]; then
+    echo "Commit message required"
+    return 1
+  fi
+  
+  local branch=$(git_current_branch)
+  
+  if [[ "$branch" == "master" || "$branch" == "main" ]]; then
+    echo "⚠️  You are on branch '$branch'"
+    read "REPLY?Commit to $branch? (Y/n) "
+    if [[ $REPLY =~ ^[Nn]$ ]]; then
+      echo "Commit cancelled"
+      return 1
+    fi
+  fi
+  
+  git add -A
+  git commit -m "$*"
+  ggpush
+}
+
 alias ga='git add'
 alias gaa='git add .'
 alias gaaa='git add --all'
@@ -56,7 +84,7 @@ alias lg='lazygit'
 
 # ansible aliases
 export ANSIBLE_STRATEGY="mitogen_linear"
-export ANSIBLE_STRATEGY_PLUGINS="/Users/username/repo/mitogen-0.3.31/ansible_mitogen/plugins/strategy"
+export ANSIBLE_STRATEGY_PLUGINS="/Users/user/repo/mitogen-0.3.31/ansible_mitogen/plugins/strategy"
 export ANSIBLE_VAULT_PASSWORD_FILE="~/vault.pass"
 alias ap='ansible-playbook'
 
@@ -79,39 +107,12 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
 
-# yandex cloud cli
+# YC
 yc() {
     unset -f yc
-    source '/Users/username/yandex-cloud/path.bash.inc'
-    source '/Users/username/yandex-cloud/completion.zsh.inc'
+    source '/Users/user/yandex-cloud/path.bash.inc'
+    source '/Users/user/yandex-cloud/completion.zsh.inc'
     yc "$@"
-}
-
-# NVM
-export NVM_DIR="$HOME/.nvm"
-
-nvm() {
-    unset -f nvm node npm npx
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-    nvm "$@"
-}
-
-node() {
-    unset -f nvm node npm npx
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-    node "$@"
-}
-
-npm() {
-    unset -f nvm node npm npx
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-    npm "$@"
-}
-
-npx() {
-    unset -f nvm node npm npx
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-    npx "$@"
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
